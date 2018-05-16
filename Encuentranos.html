@@ -1,10 +1,11 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta name="author" content="Byron Povea"></meta>
+		<meta name="author" content="Byron Povea">
 		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="static/css/extra.css">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<title>Encuentranos</title>
 	</head>
 	<body>
 		<header>
@@ -18,41 +19,47 @@
 				<li  class="active"><a href="Encuentranos.html">Encuentranos</a></li>
 			</ul>
 		</nav>
-		<section>
-			<h3>Envíanos tus opiniones</h3>
-			<form action="">
-				<label>Nombres completos</label><input type="text" name=""><br>
-				<label>Correo electrónico</label><input type="email" name=""><br>
-				<label>Utilidad del sitio</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Nada</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Poco</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Algo</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Muy</label>
-				<label class="radio-inline"><input type="radio" name="optradio">Completamente</label><br>
-				<label>Edad</label><input type="number" name=""><br>
-				<label>Provincia</label>
-				<select>
-					<option>Azuay</option>
-					<option>Pichincha</option>
-					<option>Galapagos</option>
-				</select><br>
-				<label>Comentarios</label><br>
-				<textarea rows="5" cols="50"></textarea><br>
-				<input type="checkbox" name=""><label>Deseo suscribirme para recibir noticias</label><br>
-				<button type="submit">Enviar</button>
-			</form>
-
-		</section>
-		<aside>
-			<div>
-				<h2>¿Cómo usar nuestro sitio?</h2>
-				<video src="src/video/uso.mp4" alt="Video_Uso"></video>
+		<div class="container" id="main-content">
+			<div class="row">
+				<div class="col-md-4" id="aside">
+					<div>
+						<h2>¿Cómo usar nuestro sitio?</h2>
+						<video controls>
+							<source src="src/video/uso.mp4" alt="Video_Uso">
+						</video>
+					</div>
+					<div>
+						<h2>Strem Twiter</h2>
+						<div id="stremTwiter">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8" id="content">
+					<h3>Envíanos tus opiniones</h3>
+					<form action="">
+						<label>Nombres completos</label><input type="text" name=""><br>
+						<label>Correo electrónico</label><input type="email" name=""><br>
+						<label>Utilidad del sitio</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Nada</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Poco</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Algo</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Muy</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Completamente</label><br>
+						<label>Edad</label><input type="number" name=""><br>
+						<label>Provincia</label>
+						<select>
+							<option>Azuay</option>
+							<option>Pichincha</option>
+							<option>Galapagos</option>
+						</select><br>
+						<label>Comentarios</label><br>
+						<textarea rows="5" cols="50"></textarea><br>
+						<input type="checkbox" name=""><label>Deseo suscribirme para recibir noticias</label><br>
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
 			</div>
-			<div>
-				<h2>Strem Twiter</h2>
-				<div id="stremTwiter"></div>
-			</div>
-		</aside>
+		</div>	
 		<footer>
 			<p>© Propiedad intelectual - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc facilisis, congue est ac, vehicula erat. In at lacus semper, vulputate ligula tristique, tempor sapien.</p>
 			<img src="src/img/footer.png" alt="Img_footer" width="200">

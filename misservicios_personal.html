@@ -7,7 +7,7 @@
 		<meta name="keywords" content="">
 		<meta autor="author" content="Mauricio Leiton"> 
 		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="static/css/extra.css">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
 	</head>
 
 	<body>
@@ -23,44 +23,51 @@
 				<li><a href="Encuentranos.html">Encuentranos</a></li>
 			</ul>
 		</nav>
-		
-		<aside>
-			<div>
-				<h2>Como usar nuestro servicios </h2>
-				<video controls>
-					<source src="" type="video/mp4">
-				</video>
-			</div> 
-			<div>
-				<h2>Stream </h2>
+		<div class="container" id="main-content">
+			<div class="row">
+				<div class="col-md-4" id="aside">
+					<aside>
+						<div>
+							<h2>Como usar nuestro servicios </h2>
+							<video controls>
+								<source src="src/video/uso.mp4" type="video/mp4">
+							</video>
+						</div> 
+						<div>
+							<h2>Stream </h2>
+						</div>
+					</aside>
+				</div>
+				<div class="col-md-8" id="content">
+					<section>
+						<article>
+							<h2>Datos personales </h2>
+							<img src="src/img/img.jpg" width="100" alt="Datos personales">
+							<p>
+								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+							</p>
+						</article>
+
+						<article>
+							<h2>Servicio Registrados </h2>
+							<ul>
+								<li>SRI </li>
+								<li>Telefonía móvil</li>
+								<li>Telefonía Fija</li>
+								<li>Agua potable</li>
+							</ul>
+							
+						</article>	
+					</section>
+				</div>
 			</div>
-		</aside>
-
-		<section>
-			<article>
-				<h2>Datos personales </h2>
-				<img src="src/img/img.jpg" width="100" alt="Datos personales">
-				<p>
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-				</p>
-			</article>
-
-			<article>
-				<h2>Servicio Registrados </h2>
-				<ul>
-					<li>SRI </li>
-					<li>Telefonía móvil</li>
-					<li>Telefonía Fija</li>
-					<li>Agua potable</li>
-				</ul>
-				
-			</article>	
-		</section>
+		</div>
 
 		<footer>
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-			<img src="src/img/img.jpg" alt="Img_footer" width="100">
+			<p>© Propiedad intelectual - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc facilisis, congue est ac, vehicula erat. In at lacus semper, vulputate ligula tristique, tempor sapien.</p>
+			<img src="src/img/footer.png" alt="Img_footer" width="200" class="pull-right">
 		</footer>
+
 	</body>
 	<script type="text/javascript" src="./static/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
