@@ -1,0 +1,29 @@
+/*"Estas etiquetas comparten las mismas propiedades. Cualquier otra etiqueta h2 tendrá las mismas características"*/
+*{
+	font-family: "verdana";
+}
+
+h1,h2{
+	text-align: center;
+	text-decoration: underline;
+}
+
+p{
+	text-align: right;
+	color: blue;
+}
+
+p#rusia,p#iran{
+	border:1px dotted black;
+}
+
+span.bombo{
+	color: orange;
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+#cabecera{
+	background-image: url("../img2.png");
+	height: 100px;
+}
