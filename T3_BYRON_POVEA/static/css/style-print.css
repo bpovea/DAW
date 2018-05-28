@@ -1,0 +1,14 @@
+*{
+	text-align: center;
+}
+img{
+	display: none;
+}
+img+p::first-letter, img+p+p::first-letter{
+	font-weight: bold;
+	font-size: 2em;
+}
+div.card{
+	display: inline-block;
+	width: 30%;
+}
