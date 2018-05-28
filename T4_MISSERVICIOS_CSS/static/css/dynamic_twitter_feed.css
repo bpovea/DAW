@@ -1,0 +1,25 @@
+#tweet-1 .name::before {
+  content: "Kevin Mandeville";
+}
+
+#tweet-1 .handle::after {
+  content: "@KevinMandeville";
+}
+
+#tweet-1 .copy::before {
+  content: "I'm excited for #TEDC15! Who's going?";
+}
+
+#tweet-1 .timestamp::after {
+  content: "1m";
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Insert CSS here */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .webkit-hide {
+    display: none;
+  }
+}
