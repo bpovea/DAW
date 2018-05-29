@@ -21,7 +21,7 @@
 				<li><a href="servicio_principal.html">Principal</a></li>
 				<li><a href="Quienes_somos.html">¿Quiénes somos?</a></li>
 				<li><a href="misservicios_personal.html">Personal</a></li>
-				<li  class="active"><a href="Encuentranos.html">Encuentranos</a></li>
+				<li class="active"><a href="Encuentranos.html">Encuentranos</a></li>
 			</ul>
 		</nav>
 		<div class="container" id="main-content">
@@ -41,38 +41,49 @@
 									<img src="http://assets.insights.litmus.com/campaigns/tedc-2015/assets/tweets.jpg" border="0" class="webkit-hide" alt="tweet #TEDC15 to show up in the live feed!" style="color: #666666; font-size: 16px;" id="img_tweet"/>
 								</div>
 							</div>
-		  				<div>
+		  				</div>
 					</div>
 				</div>
 				<div class="col-md-9" id="content">
 					<h3>Envíanos tus opiniones</h3>
-					<form >
-						<label>Nombres completos</label><input type="text" name="nombres"><br>
-						<label>Correo electrónico</label><input type="email" name="correo"><br>
-						<label>Utilidad del sitio</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Nada</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Poco</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Algo</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Muy</label>
-						<label class="radio-inline"><input type="radio" name="optradio">Completamente</label><br>
-						<label>Edad</label><input type="number" name="edad"><br>
-						<label>Provincia</label>
-						<select>
-							<option>Azuay</option>
-							<option>Pichincha</option>
-							<option>Galapagos</option>
-						</select><br>
-						<label>Comentarios</label><br>
-						<textarea rows="5" cols="50"></textarea><br>
-						<input type="checkbox" name="suscribirme"><label>Deseo suscribirme para recibir noticias</label><br>
-						<button type="submit">Enviar</button>
+					<form>
+						<div class="col-md-3">
+							<label>Nombres completos:</label><br>
+							<label>Correo electrónico:</label><br>
+							<label>Utilidad del sitio:</label><br>
+							<label>Edad:</label><br>
+							<label>Provincia:</label><br>
+						</div>
+						<div class="col-md-9">
+							<input type="text" name="nombres"><br>
+							<input type="email" name="correo"><br>
+							<label class="radio-inline"><input type="radio" name="optradio">Nada</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Poco</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Algo</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Muy</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Completamente</label><br>
+							<input type="number" name="edad"><br>
+							<select>
+								<option>Azuay</option>
+								<option>Pichincha</option>
+								<option>Galapagos</option>
+							</select><br>
+						</div>
+						<div class="col-md-12">
+							<label>Comentarios</label><br>
+							<textarea cols="100"></textarea><br>
+							<input type="checkbox" name="suscribirme"><label>Deseo suscribirme para recibir noticias</label><br>
+							<button type="submit">Enviar</button>
+						</div>
 					</form>
 				</div>
 			</div>
 		</div>	
 		<footer>
-			<p class="col-md-6">&copy; Propiedad intelectual - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc facilisis, congue est ac, vehicula erat. In at lacus semper, vulputate ligula tristique, tempor sapien.</p>
+			<div class="col-md-12">
+				<p class="col-md-6">&copy; Propiedad intelectual - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc facilisis, congue est ac, vehicula erat. In at lacus semper, vulputate ligula tristique, tempor sapien.</p>
 			<img class="col-md-3 col-md-offset-3" src="src/img/footer.png" alt="Img_footer" width="10px" height="60px">
+			</div>
 		</footer>
 	</body>
 </html>

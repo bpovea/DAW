@@ -15,3 +15,7 @@ video{
 .imagen{
 	 box-shadow: 5px 5px grey;
 }
+ul#servicios>li:hover{
+	cursor: pointer;
+	font-weight: bold;
+}

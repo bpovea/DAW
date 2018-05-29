@@ -41,3 +41,11 @@ nav>ul>li:hover{
 	font-weight: bold;
 	background-color: gray;
 }
+
+form>div>*{
+	height: 30px;
+	margin-bottom: 5px;
+}
+textarea{
+	height: 150px !important;	
+}
