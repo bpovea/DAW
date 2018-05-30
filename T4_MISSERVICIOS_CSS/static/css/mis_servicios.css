@@ -5,17 +5,37 @@ footer{
 	border: 1px solid blue;
 	text-align: justify;
 }
+
 footer img{
-	margin-top:10px;  
+	margin-top:10px; 
 }
+
 video{
 	width: 100%
 }
 
 .imagen{
-	 box-shadow: 5px 5px grey;
+	box-shadow: 5px 5px grey;
+	border: 2px solid rgb(185, 200, 201);
 }
 ul#servicios>li:hover{
 	cursor: pointer;
 	font-weight: bold;
+}
+
+.descripcion{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+#sri:hover .descripcion,#telefonia-movil:hover .descripcion,#telefonia-fija:hover .descripcion,#agua:hover .descripcion {
+  display: block;
+}
+
+div>div>img[alt="Img_Misión"]:hover,div>div>img[alt="Img_Visión"]:hover{
+	 opacity: 0.5;
 }

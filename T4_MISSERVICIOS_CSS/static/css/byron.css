@@ -18,7 +18,7 @@ nav.navbar.navbar-default{
 }
 
 nav>ul>li:hover{
-	background-color: #537c9a
+	background-color: #537c9a;
 }
 
 .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
