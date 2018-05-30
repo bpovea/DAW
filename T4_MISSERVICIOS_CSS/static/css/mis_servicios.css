@@ -39,3 +39,8 @@ ul#servicios>li:hover{
 div>div>img[alt="Img_Misión"]:hover,div>div>img[alt="Img_Visión"]:hover{
 	 opacity: 0.5;
 }
+
+
+.nombres_form input:focus, .email_form textarea:focus { 
+    padding-right:70px;
+}
