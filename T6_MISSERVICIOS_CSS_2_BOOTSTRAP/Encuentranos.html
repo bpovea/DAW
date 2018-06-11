@@ -46,42 +46,42 @@
 				<div class="col-md-9" id="content">
 					<h3>Envíanos tus opiniones</h3>
 					<form>
-						<div class="col-md-3">
-							<label class="nombres_form">Nombres completos:</label><br>
-							<label>Correo electrónico:</label><br>
-							<label>Utilidad del sitio:</label><br>
-							<label>Edad:</label><br>
-							<label>Provincia:</label><br>
-						</div>
-						<div class="col-md-9">
-							<input class="nombres_form" type="text" name="nombres" placeholder="Mauricio Leiton" required><br>
-							<input class="email_form" type="email" name="correo" placeholder="mdleiton@espol.edu.ec" required><br>
-							<label class="radio-inline"><input type="radio" name="optradio">Nada</label>
+						<div class="col-md-12 form-group">
+							<div class="col-md-3 label-form"><label class="nombres_form">Nombres completos:</label></div>
+							<div class="col-md-9 input"><input class="nombres_form" type="text" name="nombres" placeholder="Mauricio Leiton" required></div>
+							<div class="col-md-3 label-form"><label>Correo electrónico:</label></div>
+							<div class="col-md-9 input"><input class="email_form" type="email" name="correo" placeholder="mdleiton@espol.edu.ec" required></div>
+							<div class="col-md-3 label-form"><label>Utilidad del sitio:</label></div>
+							<div class="col-md-9 input"><label class="radio-inline"><input type="radio" name="optradio">Nada</label>
 							<label class="radio-inline"><input type="radio" name="optradio">Poco</label>
 							<label class="radio-inline"><input type="radio" name="optradio">Algo</label>
 							<label class="radio-inline"><input type="radio" name="optradio">Muy</label>
-							<label class="radio-inline"><input type="radio" name="optradio">Completamente</label><br>
-							<input type="number" name="edad" placeholder="21" required><br>
-							<select>
+							<label class="radio-inline"><input type="radio" name="optradio">Completamente</label></div>
+							<div class="col-md-3 label-form"><label>Edad:</label></div>
+							<div class="col-md-9 input"><input type="number" name="edad" placeholder="18" required></div>
+							<div class="col-md-3 label-form"><label>Provincia:</label><br></div>
+							<div class="col-md-9 input"><select>
 								<option>Azuay</option>
 								<option>Pichincha</option>
 								<option>Galapagos</option>
-							</select><br>
-						</div>
-						<div class="col-md-12">
-							<label>Comentarios</label><br>
-							<textarea cols="100"></textarea><br>
-							<input type="checkbox" name="suscribirme"><label>Deseo suscribirme para recibir noticias</label><br>
-							<button type="submit">Enviar</button>
+							</select></div>
+							<div class="col-md-3 label-form"><label>Comentarios:</label></div>
+							<div class="col-md-9 input comentarios"><textarea cols="50" rows="10"></textarea><br><input type="checkbox" name="suscribirme"><label>Deseo suscribirme para recibir noticias</label></div>
+							<div class="col-md-12"><button type="submit" class="pull-center">Enviar</button></div>
 						</div>
 					</form>
 				</div>
 			</div>
-		</div>	
-		<footer>
-			<div class="col-md-12">
-				<p class="col-md-6">&copy; Propiedad intelectual - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc facilisis, congue est ac, vehicula erat. In at lacus semper, vulputate ligula tristique, tempor sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-			<img class="col-md-3 col-md-offset-3" src="src/img/footer.png" alt="Img_footer" width="10px" height="60px">
+		</div>
+		<hr>	
+		<footer class="container">
+			<div class="row">
+				<div class="col-md-9 footer-text">
+					<p>&copy; Propiedad intelectual - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc facilisis, congue est ac, vehicula erat. In at lacus semper, vulputate ligula tristique, tempor sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="src/img/footer.png" alt="Img_footer">
+				</div>
 			</div>
 		</footer>
 	</body>

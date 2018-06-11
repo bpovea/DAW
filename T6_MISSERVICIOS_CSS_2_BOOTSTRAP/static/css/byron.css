@@ -44,5 +44,15 @@ form>div>*{
 	margin-bottom: 5px;
 }
 textarea{
-	height: 150px !important;	
+	height: 150px;	
+}
+
+.footer-text{
+	margin-top: 7%;
+}
+
+@media only screen and (max-width: 600px){
+	h1{
+		font-size: 20pt !important;
+	}
 }

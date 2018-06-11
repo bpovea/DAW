@@ -1,8 +1,5 @@
 footer{
-	height: 80px;
 	width: auto;
-	margin: 10px 20px 10px 20px;
-	border: 1px solid blue;
 	text-align: justify;
 }
 
@@ -43,4 +40,13 @@ div>div>img[alt="Img_Misión"]:hover,div>div>img[alt="Img_Visión"]:hover{
 
 .nombres_form input:focus, .email_form textarea:focus { 
     padding-right:70px;
+}
+
+.comentarios{
+	height: inherit;
+}
+
+.pull-center{
+	position: absolute;
+	left: 50%;
 }
