@@ -1,0 +1,86 @@
+header{
+	background-image: url('../../src/img/bgn_header.jpg');
+}
+
+header>h1{
+	font-size: 40pt;
+	text-shadow: 1px 0px 11px rgba(144, 150, 150, 1);
+}
+
+nav.navbar.navbar-default{
+	background-color: rgb(185, 200, 201);
+	border-top: solid 1.5pt;
+	border-bottom: solid 1.5pt;
+}
+
+nav>ul>li:hover{
+	background-color: #537c9a;
+}
+
+.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+	font-weight: bold;
+	background-color: #364242;
+	color: #fff;
+}
+
+footer{
+	height: 100px;
+	width: auto;
+	margin: 10px 20px 10px 20px;
+	border: 1px solid blue;
+}
+
+footer img{
+	margin-top:10px; 
+}
+
+video{
+	width: 100%
+}
+
+.imagen{
+	box-shadow: 5px 5px grey;
+	border: 2px solid rgb(185, 200, 201);
+}
+ul#servicios>li:hover{
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.descripcion{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+#sri:hover .descripcion,#telefonia-movil:hover .descripcion,#telefonia-fija:hover .descripcion,#agua:hover .descripcion {
+  display: block;
+}
+
+div>div>img[alt="Img_Misión"]:hover,div>div>img[alt="Img_Visión"]:hover{
+	 opacity: 0.5;
+}
+
+form>div>*{
+	height: 30px;
+	margin-bottom: 5px;
+}
+textarea{
+	height: 150px !important;	
+}
+
+.nombres_form input:focus, .email_form textarea:focus { 
+    padding-right:70px;
+}
+
+.img{
+	color: #666666; 
+	font-size: 16px;
+}
+
+.table-striped > thead{
+	background-color: gray;
+}

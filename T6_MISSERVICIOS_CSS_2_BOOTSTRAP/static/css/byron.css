@@ -4,8 +4,6 @@ header{
 }
 
 header>h1{
-	text-align: center;
-	font-weight: bold;
 	font-size: 40pt;
 	text-shadow: 1px 0px 11px rgba(144, 150, 150, 1);
 }
@@ -14,7 +12,6 @@ nav.navbar.navbar-default{
 	background-color: rgb(185, 200, 201);
 	border-top: solid 1.5pt;
 	border-bottom: solid 1.5pt;
-	border-radius: 0px;
 }
 
 nav>ul>li:hover{
