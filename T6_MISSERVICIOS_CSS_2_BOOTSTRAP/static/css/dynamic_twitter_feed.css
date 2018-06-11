@@ -1,0 +1,15 @@
+
+#visor {
+	padding: 5px;
+	height: 350px;
+	overflow: hidden;
+	overflow-y: auto;
+	border: 1px solid #000; /* solo para test */
+}
+#portaimagen {
+	width: 100%;
+	overflow: hidden;
+}
+#img_tweet{
+	width: 100%
+}

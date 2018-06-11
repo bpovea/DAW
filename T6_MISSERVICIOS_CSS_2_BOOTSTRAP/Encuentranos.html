@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Byron Povea">
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/byron.css">
+		<link rel="stylesheet" type="text/css" href="static/css/mis_servicios.css">
+		<link rel="stylesheet" type="text/css" href="static/css/dynamic_twitter_feed.css">
+		<title>Encuentranos</title>
+		<script src="./static/js/jquery-3.2.1.min.js"></script>
+		<script src="./static/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>TodosMisServicios.ec</h1>
+		</header>
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li><a href="servicio_principal.html">Principal</a></li>
+				<li><a href="Quienes_somos.html">¿Quiénes somos?</a></li>
+				<li><a href="misservicios_personal.html">Personal</a></li>
+				<li class="active"><a href="Encuentranos.html">Encuentranos</a></li>
+			</ul>
+		</nav>
+		<div class="container" id="main-content">
+			<div class="row">
+				<div class="col-md-3" id="aside">
+					<div>
+						<h4>¿Cómo usar nuestro sitio?</h4>
+						<video controls>
+							<source src="src/video/uso.mp4">
+						</video>
+					</div>
+					<div>
+						<h4>Stream Twiter</h4>
+						<div id="visor">
+							<div id="portaimagen">
+								<div id="imagen">
+									<img src="src/img/tweets.jpg" border="0" class="webkit-hide" alt="tweet #TEDC15 to show up in the live feed!" style="color: #666666; font-size: 16px;" id="img_tweet"/>
+								</div>
+							</div>
+		  				</div>
+					</div>
+				</div>
+				<div class="col-md-9" id="content">
+					<h3>Envíanos tus opiniones</h3>
+					<form>
+						<div class="col-md-3">
+							<label class="nombres_form">Nombres completos:</label><br>
+							<label>Correo electrónico:</label><br>
+							<label>Utilidad del sitio:</label><br>
+							<label>Edad:</label><br>
+							<label>Provincia:</label><br>
+						</div>
+						<div class="col-md-9">
+							<input class="nombres_form" type="text" name="nombres" placeholder="Mauricio Leiton" required><br>
+							<input class="email_form" type="email" name="correo" placeholder="mdleiton@espol.edu.ec" required><br>
+							<label class="radio-inline"><input type="radio" name="optradio">Nada</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Poco</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Algo</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Muy</label>
+							<label class="radio-inline"><input type="radio" name="optradio">Completamente</label><br>
+							<input type="number" name="edad" placeholder="21" required><br>
+							<select>
+								<option>Azuay</option>
+								<option>Pichincha</option>
+								<option>Galapagos</option>
+							</select><br>
+						</div>
+						<div class="col-md-12">
+							<label>Comentarios</label><br>
+							<textarea cols="100"></textarea><br>
+							<input type="checkbox" name="suscribirme"><label>Deseo suscribirme para recibir noticias</label><br>
+							<button type="submit">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>	
+		<footer>
+			<div class="col-md-12">
+				<p class="col-md-6">&copy; Propiedad intelectual - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nunc facilisis, congue est ac, vehicula erat. In at lacus semper, vulputate ligula tristique, tempor sapien.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<img class="col-md-3 col-md-offset-3" src="src/img/footer.png" alt="Img_footer" width="10px" height="60px">
+			</div>
+		</footer>
+	</body>
+</html>
