@@ -1,0 +1,12 @@
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt update
+sudo apt install python3.6
+
+virtualenv --python=python3.6 ProjectDjango
+source ProjectDjango/bin/activate
+pip install djongo
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
