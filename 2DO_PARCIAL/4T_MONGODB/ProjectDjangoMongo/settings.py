@@ -84,7 +84,7 @@ DATABASES = {
 DATABASES = {
    'default': {
       'ENGINE': 'djongo',
-      'NAME': 'pruebas',
+      'NAME': 'pruebas2',
    }
 }
 

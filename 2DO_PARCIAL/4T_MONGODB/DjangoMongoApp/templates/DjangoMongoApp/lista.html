@@ -35,21 +35,35 @@
             <div class="col-md-12">
                 <h3 class="text-center">Usuarios</h3>
             </div>
-            {% for usuario in usuarios %}
-                <div class="col-md-3 text-center">
-                    <img class="rounded-circle img-circle" src="{% static 'img/img.jpg' %}" width="50%" >
-                    <h4>{{ usuario.nombre }}-{{ usuario.apellidos }}</h4>
-                    <h5>{{ usuario.fecha|date:"M d, Y" }}</h5>
-                    <h5>{{ usuario.ci }}</h5>
-                    <p class="text-left">Servicios:</p>
-                    <ul class="text-left">    
-                        {% for servicio in usuario.servicios.all %}
-                            <li>{{ servicio.nombre }}</li>
-                        {% endfor %}
-                    </ul> 
+            <div class="col-md-12">
+                <div class="row">
+                    <form class="col-md-12" action="/filtro/" method="GET">
+                        Servicios: <input type="text" name="servicio">
+                        Fecha: <input type="date" name="fecha">
+                        <input type="submit" value="filtrar">
+                    </form> 
                 </div>
-            {% endfor %}
-            
+            </div>
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <tr>
+                      <th>Nombre completo</th>
+                      <th>Servicio</th>
+                      <th>Ciudad</th>
+                      <th>Fecha</th>
+                      <th>Total</th>
+                    </tr>
+                    {% for usuario in usuarios %}
+                    <tr>
+                        <td>{{ usuario.nombre_completo }}</td>
+                        <td>{{ usuario.servicios.nombre }}</td>
+                        <td>{{ usuario.ciudad }}</td>
+                        <td>{{ usuario.servicios.fecha }}</td>
+                        <td>{{ usuario.servicios.totalFactura  }}</td>
+                    </tr>
+                    {% endfor %}
+                </table> 
+            </div>            
         </div>
         <div class="row">
             <footer class="col-md-12 text-center">

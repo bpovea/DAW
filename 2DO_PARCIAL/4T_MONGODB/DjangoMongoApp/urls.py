@@ -23,6 +23,6 @@ from django.urls import path
 app_name="DjangoMongoApp"
 
 urlpatterns = [
-    path('', views.lista),
-    
+    path('home/', views.lista),
+    path("filtro/",views.filtro),
 ]
