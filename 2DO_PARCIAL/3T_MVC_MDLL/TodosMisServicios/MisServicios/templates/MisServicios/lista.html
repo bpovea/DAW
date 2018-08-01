@@ -37,7 +37,7 @@
             </div>
             {% for usuario in usuarios %}
                 <div class="col-md-3 text-center">
-                    <img class="rounded-circle img-circle" src="{% static 'img/img.jpg' %}" width="50%" >
+                    <a href="/usuariodetalles/{{usuario.id}}"> <img class="rounded-circle img-circle" src="{% static 'img/img.jpg' %}" width="50%" ></a>
                     <h4>{{ usuario.nombre }}-{{ usuario.apellidos }}</h4>
                     <h5>{{ usuario.fecha|date:"M d, Y" }}</h5>
                     <h5>{{ usuario.ci }}</h5>

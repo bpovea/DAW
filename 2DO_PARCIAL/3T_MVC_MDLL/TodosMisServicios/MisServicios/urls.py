@@ -19,10 +19,16 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from MisServicios import views
 from django.urls import path
-
+from rest_framework.urlpatterns import format_suffix_patterns
 app_name="MisServicios"
 
 urlpatterns = [
-    path('home', views.lista),
+    path('home/', views.lista),
+    url('/usuarios/', views.usuario_lista),
+    url(r'^usuariodetalles/(?P<id>\d+)$', views.servicios_prestados,name='servicios_prestados'),
+
+    url(r'^usuario/(?P<pk>[0-9]+)$', views.usuario_detalles),
     
 ]
+    
+urlpatterns = format_suffix_patterns(urlpatterns)
