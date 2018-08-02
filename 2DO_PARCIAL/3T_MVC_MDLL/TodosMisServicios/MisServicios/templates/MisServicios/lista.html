@@ -1,64 +1,18 @@
+{% extends "MisServicios/base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" >
-    <title>Lista de usuarios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="{% static 'css/bootstrap.css'  %}" rel="stylesheet">
-    <script src="{% static 'js/jquery-3.2.1.min.js'  %}"></script>
-    <script src="{% static 'js/bootstrap.js'  %}"></script>
-</head>
-<body>
-    <div class="text-center">
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-                <a class="nav-link " href="#">Principal servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-            </li>
-        </ul>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-center">
-                        <img src="{% static 'img/img.jpg' %}" width="25%">
-                </div>
-            </div>
-            <div class="col-md-12">
-                <h3 class="text-center">Usuarios</h3>
-            </div>
-            {% for usuario in usuarios %}
-                <div class="col-md-3 text-center">
-                    <a href="/usuariodetalles/{{usuario.id}}"> <img class="rounded-circle img-circle" src="{% static 'img/img.jpg' %}" width="50%" ></a>
-                    <h4>{{ usuario.nombre }}-{{ usuario.apellidos }}</h4>
-                    <h5>{{ usuario.fecha|date:"M d, Y" }}</h5>
-                    <h5>{{ usuario.ci }}</h5>
-                    <p class="text-left">Servicios:</p>
-                    <ul class="text-left">    
-                        {% for servicio in usuario.servicios.all %}
-                            <li>{{ servicio.nombre }}</li>
-                        {% endfor %}
-                    </ul> 
-                </div>
-            {% endfor %}
-            
+{% block content %}
+    {% for usuario in usuarios %}
+        <div class="col-md-3 text-center">
+            <a href="/usuariodetalles/{{usuario.id}}"> <img class="rounded-circle img-circle" src="{% static 'img/img.jpg' %}" width="50%" ></a>
+            <h4>{{ usuario.nombre }}</h4>
+            <h5>{{ usuario.ciudad }}</h5>
+            <p class="text-left">Servicios:</p>
+            <ul class="text-left">    
+                {% for servicio in usuario.servicios.all %}
+                    <li>{{ servicio.servicio.nombre }}</li>
+                {% endfor %}
+            </ul> 
         </div>
-        <div class="row">
-            <footer class="col-md-12 text-center">
-                <p>Mauricio Leiton</p>
-                <p>Contacto: <a href="mdleiton@espol.edu.ec">mdleiton@espol.edu.ec</a>.</p>
-            </footer>
-        </div>
-    </div>
-     
-
-</body>
-</html>
+    {% endfor %}
+{% endblock %}

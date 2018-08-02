@@ -1,34 +1,22 @@
-"""TodosMisServicios URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.conf.urls import include, url
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from MisServicios import views
-from django.urls import path
+from django.urls import path,re_path
 from rest_framework.urlpatterns import format_suffix_patterns
 app_name="MisServicios"
 
 urlpatterns = [
-    path('home/', views.lista),
-    url('/usuarios/', views.usuario_lista),
-    url(r'^usuariodetalles/(?P<id>\d+)$', views.servicios_prestados,name='servicios_prestados'),
+    path('lista/', views.lista),
+    path('listaapi/', views.lista_api),
+    re_path('usuariodetalles/(?P<id>\d+)$', views.servicios_prestados),
 
-    url(r'^usuario/(?P<pk>[0-9]+)$', views.usuario_detalles),
-    
+    re_path(r'usuarios/', views.usuarios.as_view()),    
+    re_path(r'usuario/(?P<pk>[0-9]+)$', views.usuario_detalle.as_view()),
+    re_path(r'usuario_servicio/(?P<pk>[0-9]+)$', views.usuario_servicio.as_view()),
+
+    re_path(r'servicios/', views.servicios.as_view()),   
 ]
     
 urlpatterns = format_suffix_patterns(urlpatterns)
