@@ -6,13 +6,41 @@ from MisServicios.api_info.usuarios import *
 from MisServicios.api_info.servicios import *
 from MisServicios.api_info.usuarioServicios import *
 from MisServicios.serializers import *
+from django.contrib.auth import login as auth_login,logout as auth_logout,authenticate
+
+def login(request):
+    if request.user.is_authenticated:
+        return render(request,'MisServicios/menu.html')
+    if request.method == 'POST':
+        user = authenticate(username=request.POST['username'], password=request.POST['password'])
+        if user is not None:
+            auth_login(request, user)
+            return redirect("MisServicios:Menu")
+            #return render(request,'MisServicios/menu.html')
+        else:
+            return render(request,'MisServicios/login.html',{'error':"formulario de inicio de sesión incorrecto"})
+    else:
+        return render(request,'MisServicios/login.html')
+        
+
+def menu(request):
+    if request.COOKIES['pagina']:
+        return redirect("MisServicios:"+request.COOKIES['pagina'])
+        #return render(request,'MisServicios/'+request.COOKIES['pagina'] + '.html')
+    else:
+        return render(request,'MisServicios/menu.html')
+
 def lista(request):
-    #registrarDatos()
     usuarios = Usuario.objects.all()
-    return render(request,'MisServicios/lista.html',{'usuarios':usuarios})
+    response = render(request,'MisServicios/lista.html',{'usuarios':usuarios})
+    response.set_cookie('pagina',"lista")
+    return response
 
 def lista_api(request):
-    return render(request,'MisServicios/listaapi.html')
+    if request.user.is_authenticated:
+        response =  render(request,'MisServicios/listaapi.html')
+        response.set_cookie('pagina',"listaapi")
+        return response 
 
 def servicios_prestados(request, id):
     usuario = get_object_or_404(Usuario, pk=id)

@@ -8,8 +8,11 @@ from rest_framework.urlpatterns import format_suffix_patterns
 app_name="MisServicios"
 
 urlpatterns = [
-    path('lista/', views.lista),
-    path('listaapi/', views.lista_api),
+
+    path('login/', views.login),
+    url('menu/',views.menu,name = "Menu"),
+    url('lista/', views.lista,name = "lista"),
+    url('listaapi/', views.lista_api,name = "listaapi"),
     re_path('usuariodetalles/(?P<id>\d+)$', views.servicios_prestados),
 
     re_path(r'usuarios/', views.usuarios.as_view()),    

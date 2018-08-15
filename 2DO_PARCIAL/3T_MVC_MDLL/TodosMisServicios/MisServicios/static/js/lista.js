@@ -14,11 +14,11 @@ function agregarUsuarios(lista){
     }
     $("div.container div.contenido").append(html);  
 };
-
+//
 $(document).ready(function() {
     $.ajax({
-        url: "usuarios/",
-        type:"GET",    
+        url: "/usuarios/",
+        type:"GET",   
         dataType : 'json',
         success :agregarUsuarios,
         error : function(xhr, status) {
